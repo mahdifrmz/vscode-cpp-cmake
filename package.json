@@ -1,0 +1,27 @@
+{
+  "name": "ccvcp",
+  "version": "1.0.1",
+  "description": "generates C++ CMake Code Project",
+  "main": "build/index.js",
+  "bin": {
+    "cccp": "./build/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node build/index"
+  },
+  "keywords": [],
+  "author": "mahdif <mahdif1380@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/command-exists": "^1.2.0",
+    "@types/node": "^14.14.28",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.20.0",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "command-exists": "^1.2.9"
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "build-debug",
+			"command": "make",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}/build/debug"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+			
+		},
+		{
+			"type": "cppbuild",
+			"label": "build-release",
+			"command": "make",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}/build/release"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: /usr/bin/clang"
+			
+		}
+	]
+}
