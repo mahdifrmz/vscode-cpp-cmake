@@ -1,6 +1,7 @@
 import * as fs from 'fs'
 import { Dir } from './file'
 import * as path from 'path'
+import { isRegExp } from 'util'
 
 enum Templates {
     CMake = 'CMakeLists.txt',
@@ -88,6 +89,8 @@ export function getContent (dirname:string) : Dir{
 }
 
 function loadTemplate (name:string,format:{[id:string]:string}) : string{
+    if(name == Templates.GitIgnore)
+        name = 'gitignr'
     let content = fs.readFileSync(path.resolve(__dirname,'../templates/'+name)).toString()
     Object.keys(format).forEach(ele=>{
         const find = '%'+ele;
