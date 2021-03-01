@@ -1,6 +1,6 @@
 {
   "name": "ccvcp",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "generates C++ CMake Code Project",
   "main": "build/index.js",
   "bin": {
